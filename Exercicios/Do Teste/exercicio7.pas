@@ -1,5 +1,5 @@
 Program Temperaturas;
-const q = 5;
+const q = 30;
 var i : integer; temp, total, media : real;
  Begin
      textcolor(yellow);
