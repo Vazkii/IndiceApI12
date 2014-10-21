@@ -43,9 +43,9 @@ Program Calc;
 	writeln('Operadores validos: ', ops, ' "exit" para sair.');
 	textcolor(yellow);
 	
-	// Tratar do - no fim para contas com valores negativos serem possiveis
+	{ Tratar do - no fim para contas com valores negativos serem possiveis }
 	effops := ops;
-	delete(effops, pos(effops, '-'), 1);
+	delete(effops, pos(effops, '-') + 2, 1);
 	effops := concat(effops, '-');
 	
 	while true do
@@ -53,11 +53,11 @@ Program Calc;
 		read(form);
 		if form = 'exit' then break;	
 	
-		len := length(ops);
+		len := length(effops);
 		for i := 1 to len do begin
-			oppos := pos(ops[i], form);
+			oppos := pos(effops[i], form);
 			if oppos > 0 then begin
-				op := ops[i];
+				op := effops[i];
 				hasop := true;
 				break;
 			end;
