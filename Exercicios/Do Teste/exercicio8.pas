@@ -7,7 +7,7 @@ var a, b, i : integer;
 	if a > b then begin
 		i := a;
 		a := b;
-		b := a;
+		b := i;
 	end;		
 	
 	for i := a to b do

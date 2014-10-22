@@ -20,4 +20,5 @@ Program Calc_Basica;
 			else	write(a, '/', b, '=', a / b);
 		end;
 		0: write('THE END (To be continued?)');
+	end;
  End.
