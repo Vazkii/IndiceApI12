@@ -1,5 +1,5 @@
 Program TurmaNotas;
- const alunos = 4;
+ const alunos = 10;
  type intarray = array[1..alunos] of integer; strarray = array[1..alunos] of string;
  
  var nomes : strarray; idades, notas : intarray; i, total : integer; media : real;
